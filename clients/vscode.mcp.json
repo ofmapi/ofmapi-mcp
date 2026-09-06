@@ -1,0 +1,19 @@
+{
+  "servers": {
+    "ofmapi": {
+      "type": "http",
+      "url": "https://api.ofmapi.com/mcp/v1/",
+      "headers": {
+        "Authorization": "Bearer ${input:ofmapi-key}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "ofmapi-key",
+      "description": "OFMAPI API key",
+      "password": true
+    }
+  ]
+}

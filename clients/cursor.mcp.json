@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ofmapi": {
+      "url": "https://api.ofmapi.com/mcp/v1/",
+      "headers": {
+        "Authorization": "Bearer ofmapi_YOUR_KEY_HERE"
+      }
+    }
+  }
+}
