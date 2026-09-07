@@ -1,15 +1,18 @@
-# OFMAPI MCP server
+# OnlyFans API MCP server (OFMAPI)
 
-The OFMAPI Model Context Protocol server is **hosted**. There is nothing to
-install and no npm package: point your AI client at one URL.
+The OnlyFans API MCP server lets Claude, ChatGPT, Cursor, VS Code, and any
+other Model Context Protocol host work with a connected OnlyFans account:
+fans and subscribers, messages and PPV, posts and the vault, earnings and
+statistics. It is **hosted** by OFMAPI. There is nothing to install and no
+npm package: point your AI client at one URL.
 
 ```
 https://api.ofmapi.com/mcp/v1/
 ```
 
 - Transport: Streamable HTTP (keep the trailing slash)
-- Tools: 174, covering the REST API plus computed operations such as top
-  spenders, churn risk, and a creator overview
+- Tools: 174, covering the OnlyFans API REST surface plus computed
+  operations such as top spenders, churn risk, and a creator overview
 - Auth: OAuth 2.1 for Claude and ChatGPT; a scope-limited Bearer API key for
   Cursor, VS Code, and other config-based hosts
 - Accounts can be referenced by creator name or @handle
@@ -35,6 +38,17 @@ connector or app and complete OAuth.
 - "Top 5 spenders for Camila this week, with handles and totals."
 - "Who is about to churn across all my creators? Rank by lifetime spend."
 - "Draft a re-engagement DM for @ogkanug fans who have not replied in 14 days."
+
+## What OFMAPI is
+
+An independent, unofficial OnlyFans API for developers and agencies: typed
+REST endpoints, signed webhooks, and this MCP server, all over a creator's
+own connected account. There is no official OnlyFans developer API.
+
+- Website: https://ofmapi.com
+- Documentation: https://ofmapi.com/docs
+- Interactive API reference (no login): https://ofmapi.com/docs/api
+- Contact and support: https://ofmapi.com/contact
 
 ## What this repository is for
 
